@@ -1,0 +1,23 @@
+{
+  "name": "accessmate-api",
+  "version": "1.0.0",
+  "description": "Personal Project - An API which provides details of accessibility facilities such as mobility parking, elevators and stairs in selected popular regions of the Sydney City",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Sevugan Kathiresan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
