@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon dist/index.js"
+    "start": "node dist/index.js"
   },
   "author": "Sevugan Kathiresan",
   "license": "ISC",
@@ -19,7 +19,6 @@
     "eslint": "^9.13.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-node": "^11.1.0",
-    "nodemon": "^3.1.7",
     "typescript": "^5.6.3"
   },
   "dependencies": {

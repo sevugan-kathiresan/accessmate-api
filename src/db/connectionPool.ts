@@ -9,18 +9,9 @@ const pool: Pool = new Pool({
     database: process.env.DB_NAME,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    ssl: {
+    ssl: { // This SSL setting need to be set to false otherwise the RDS instance will reject the connection
         rejectUnauthorized: false,  // Set to true in production to validate the server's certificate
     },
 });
-
-// // Adding event listeners to our db pool object
-// pool.on('connect', () => {
-//     console.log('Connected to databse');
-// });
-
-// pool.on('error', (error) => {
-//     console.log('Connection failed', error.message)
-// });
 
 export default pool;
