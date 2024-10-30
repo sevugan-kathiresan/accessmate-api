@@ -21,7 +21,6 @@ export const getAllMobilityParking = async (req: Request, res: Response) => {
             ON mp.location_id = l.id
         ` + whereClause + ';';
 
-        console.log(query);
         
         const result = await client.query(query);
 
