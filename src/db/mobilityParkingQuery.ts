@@ -8,9 +8,7 @@ export const getParkingQuery = (suburb: string | undefined): string => {
     ` + whereClause + ';';
 
     return query;
-
 }
-
 
 export const getNearestParkingQuery = (): string  => {
     const query: string = `
@@ -21,5 +19,6 @@ export const getNearestParkingQuery = (): string  => {
         ORDER BY distance
         LIMIT 10;
     `;
+    
     return query;
 }

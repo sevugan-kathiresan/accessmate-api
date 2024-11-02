@@ -36,7 +36,7 @@ export const getStairs = async (req: Request, res: Response) => {
             });
         }
     } catch (error) {
-        const errorMessage: string = error instanceof Error ? error.message : 'Unknown error occurred';
+        const errorMessage: string = error instanceof Error ? error.message : 'Unknown error occurred while retrieving stairs data';
         console.log(errorMessage);
 
         res.status(500).json({

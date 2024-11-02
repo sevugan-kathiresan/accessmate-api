@@ -41,7 +41,7 @@ export const getAllMobilityParking = async (req: Request, res: Response) => {
         }
 
     } catch (error) {
-        const errorMessage: string = error instanceof Error ? error.message: "Unknown error occured while retrieving mobility parking data";
+        const errorMessage: string = error instanceof Error ? error.message: "Unknown error occurred while retrieving mobility parking data";
         console.log("Error retrieving mobility parking data:", errorMessage)
         res.status(500).json({
             success: false,

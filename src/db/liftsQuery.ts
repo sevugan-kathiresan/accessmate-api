@@ -10,7 +10,6 @@ export const getLiftsQuery = (suburb: string | undefined) : string => {
     return query;
 }
 
-
 export const getNearestLiftsQuery = () : string => {
     const query = `
         SELECT l.lifts_id, l.name, l.door_width, l.continuous_path, l.location_id, loc.x, loc.y, loc.address, loc.suburb, ST_Distance(loc.geom, ST_SetSRID(ST_MakePoint($1, $2), 4326)) AS distance
